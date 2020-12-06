@@ -1,0 +1,31 @@
+{
+  "name": "Meme Bot",
+  "version": "1.0.0",
+  "description": "Meme Botu",
+  "main": "bot.js",
+  "engines": {
+    "node": "12.16.1"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "discord.js": "^12.2.0",
+    "enmap": "^5.8.1",
+    "express": "^4.17.1",
+    "http": "^0.0.0",
+    "request": "^2.88.2",
+    "random-puppy": "^1.1.0",
+    "wio.db": "^4.0.9",
+    "node-superfetch": "^0.1.10",
+    "got": "^11.7.0",
+    "canvas-constructor": "^4.1.0",
+    "fs": "^0.0.2",
+    "canvas": "^2.6.1",
+    "fs-nextra": "^0.5.1",
+    "themememaker": "^0.0.4"
+  }
+}
