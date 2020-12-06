@@ -35,7 +35,7 @@ fs.readdir("./fozen/", (err, files) => {
     if (!file.endsWith(".js")) return;
     let props = require(`./fozen/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[LOAD_COMMAND] ${commandName}`);
+    console.log(`[KOMUT YÜKLENDİ] ${commandName}`);
     client.commands.set(commandName, props);
   });
 });
@@ -47,7 +47,7 @@ fs.readdir("./fozen2/", (err, files) => {
     if (!file.endsWith(".js")) return;
     let props = require(`./fozen2/${file}`);
     let commandName = file.split(".")[0];
-    console.log(`[LOAD_COMMAND] ${commandName}`);
+    console.log(`[KOMUT YÜKLENDİ] ${commandName}`);
     client.commands.set(commandName, props);
   });
 });

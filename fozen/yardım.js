@@ -2,6 +2,7 @@ exports.run = (client, message, args) => {
   const Discord = require("discord.js");
   const db = require("wio.db");
   let toplam = db.fetch(`toplam_`) || "0";
+  let toplam2 = db.fetch(`toplam2_`) || "0";
   const conf = require("../config.json");
   let prefix = db.fetch(`prefix_${message.guild.id}`) || conf.prefix;
 
@@ -15,6 +16,7 @@ exports.run = (client, message, args) => {
     .addField("Meme Komudu 3", "`" + prefix + "meme3`", true)
     .addField("Burdurland Komudu", "`" + prefix + "burdurland`", true)
     .addField("Kaç Kişiyimi Güldürdüm ?", `Tam Olarak **${toplam}**`)
+    .addField("Kaç Meme Yaptım", `Tam Olarak **${toplam2}**`)
     .addField("Prefix Ayarlama", "`" + prefix + "prefix` **ayarla/sıfırla**", true)
     .addField("Bot Durumu", "`" + prefix + "durum`", true)
     .addField("Linkler", `[Botu Ekle](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)`)
