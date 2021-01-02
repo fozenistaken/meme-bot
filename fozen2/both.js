@@ -3,7 +3,7 @@ const db = require("wio.db");
 const dc = require("discord.js")
 exports.run = async (client, message, args) => {
 let ust = args[0]
-let q = args.slice(1).join(" ");
+let q = args.slice(1).join("-").split(" ").join("%20")
 let alt = q.split(" ").join("%20")
 console.log(alt)
 console.log(ust)
